@@ -13,8 +13,11 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ListDTO {
-    private String code;
+    private int detailed_code;
+    private String password;
     private String title;
     private String writer;
-    private Date time;
+    private String content;
+    private int category_code;
+    private Date created_at;
 }
