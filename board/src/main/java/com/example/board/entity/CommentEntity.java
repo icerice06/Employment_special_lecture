@@ -1,6 +1,7 @@
 package com.example.board.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -15,7 +16,7 @@ import java.util.function.LongFunction;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Commnet")
+@Table(name = "Comment")
 public class CommentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +26,7 @@ public class CommentEntity {
     @NotBlank
     private String comment;
 
-    @OneToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "detailed_code")
-    private BoardEntity list_detailed_code;
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JsonIgnore
+    private BoardEntity board;
 }

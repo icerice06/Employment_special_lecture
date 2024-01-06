@@ -1,21 +1,20 @@
 package com.example.board.DTO;
 
-
+import com.example.board.entity.CommentEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ListDTO {
+public class DetailedDTO {
     private String title;
     private String writer;
-    private Long detailed_code;
-    private LocalDateTime created_at;
+    private String content;
+    private List<CommentEntity> comments;
 }

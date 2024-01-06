@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.board.mapper.BoardMapper" >
-
-    <select id="findAll" resultType="com.example.board.entity.BoardEntity">
-        SELECT * FROM BOARD
+    <select id="findList" resultType="com.example.board.entity.BoardEntity">
+        SELECT detailed_code, title, writer, created_at FROM LIST
     </select>
-    <select id="findByCategory" resultType="com.example.board.entity.BoardEntity">
-        SELECT * FROM LIST WHERE code = #{code};
+    <select id="findAll" resultType="com.example.board.entity.CategoriesEntity">
+        SELECT * FROM CATEGORY
     </select>
+    <select id="findByCode" resultType="com.example.board.entity.BoardEntity">
+        SELECT detailed_code, title, writer, created_at FROM LIST WHERE code = #{code}
+    </select>
+    <resultMap id="DetailedDTOMap" type="com.example.board.DTO.DetailedDTO">
+        <result property="title" column="title"/>
+        <result property="writer" column="writer"/>
+        <result property="content" column="content"/>
+        <association property="comments" javaType="java.util.List" resultMap="commentResultMap"/>
+    </resultMap>
+    <resultMap id="commentResultMap" type="com.example.board.DTO.CommentDTO">
+        <result property="comment_writer" column="comment_writer"/>
+        <result property="comment" column="comment"/>
+    </resultMap>
+    <select id="findById" resultMap="DetailedDTOMap">
+        SELECT l.title, l.writer, l.content,c.id, c.comment_writer, c.comment FROM LIST l LEFT JOIN COMMENT c on l.detailed_code = c.board_detailed_code WHERE l.detailed_code = #{code};
+    </select>
+    <insert id="regist">
+        INSERT INTO LIST (password, title, writer, content, code,created_at) VALUES (#{password},#{title},#{writer},#{content},#{category},#{created_at})
+    </insert>
+    <select id="modify">
+        UPDATE LIST SET title = #{title}, writer = #{writer}, content = #{content}, code = #{category} where detailed_code = #{detailed_code} and password = #{password}
+    </select>
+    <insert id="comment">
+        INSERT INTO COMMENT (comment, comment_writer, board_detailed_code) VALUES (#{comment}, #{comment_writer}, #{detailed_code})
+    </insert>
 </mapper>

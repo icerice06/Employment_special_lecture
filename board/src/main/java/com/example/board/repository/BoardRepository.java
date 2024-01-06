@@ -10,6 +10,4 @@ import java.util.List;
 
 public interface BoardRepository extends JpaRepository<BoardEntity, Long> {
 
-    @Query("SELECT list.title, list.writer FROM BoardEntity list WHERE list.category_code = :category")
-    List<BoardEntity> findByCategory(@Param("category") int category);
 }
