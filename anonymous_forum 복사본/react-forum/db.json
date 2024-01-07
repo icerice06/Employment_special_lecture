@@ -1,0 +1,197 @@
+{
+  "board": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "1",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "2",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "3",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "4",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 5,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "1",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 6,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "2",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 7,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "3",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 8,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "4",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 9,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "1",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 10,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "1",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": 11,
+      "title": "json-server",
+      "writer": "효림",
+      "password": "1234",
+      "content": "Hel안녕하세요lo",
+      "cartegory": "1",
+      "regDate": "2023/12/29"
+    },
+    {
+      "id": "",
+      "title": "",
+      "writer": "",
+      "password": "",
+      "content": "",
+      "cartegory": "",
+      "regDate": ""
+    },
+    {
+      "title": "진짜 설마 저거 때문이라고",
+      "writer": "전병우",
+      "password": "696969",
+      "content": "ㅅㅂ거 진짜 이거면 멘탈 ㅈㄴ 털리네",
+      "cartegory": "4",
+      "regDate": "",
+      "id": 13
+    }
+  ],
+  "comment": [
+    {
+      "id": 1,
+      "content": "댓글",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 1
+    },
+    {
+      "id": 2,
+      "content": "댓글1",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 1
+    },
+    {
+      "id": 3,
+      "content": "댓글2",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 1
+    },
+    {
+      "id": 4,
+      "content": "댓글0",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 2
+    },
+    {
+      "id": 5,
+      "content": "댓글0",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 2
+    },
+    {
+      "id": 6,
+      "content": "댓글0",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 3
+    },
+    {
+      "id": 7,
+      "content": "댓글0",
+      "writer": "우효림",
+      "pwd": "1234",
+      "regDate": "2023/12/29",
+      "boardId": 4
+    }
+  ],
+  "category": [
+    {
+      "name": "수업",
+      "code": 1
+    },
+    {
+      "name": "교사",
+      "code": 2
+    },
+    {
+      "name": "학생",
+      "code": 3
+    },
+    {
+      "name": "잡담",
+      "code": 4
+    }
+  ]
+}

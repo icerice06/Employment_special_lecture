@@ -1,0 +1,100 @@
+.ListContainer {
+  border-width: 2px;
+  margin-top: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.ListContainer {
+  --tw-border-opacity: 1;
+  border-color: rgb(219 234 254 / var(--tw-border-opacity));
+}
+
+.ListWarp {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.ListMenu {
+  width: 100%;
+  background-color: #ededed;
+}
+
+.ListMenuUl {
+  height: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.ListMenuLi {
+  width: 100px;
+  text-align: center;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.ListContent {
+  width: 100%;
+  min-width: 400px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.ListContent {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.List {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.ListWriter {
+  width: 100px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.ListTitle {
+  width: 100px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.ListDate {
+  width: 100px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.categoryWarp {
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.categoryContent {
+  width: 100px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.categoryContentBtn {
+  border: 0;
+  background-color: transparent;
+}

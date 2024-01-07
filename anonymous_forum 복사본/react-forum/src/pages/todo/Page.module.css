@@ -1,0 +1,16 @@
+.PageContainer {
+  width: 100%;
+}
+
+.PageWapr {
+  padding: 1rem;
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #ededed;
+}
+
+.PageContent {
+  font-size: 52px;
+  font-weight: bolder;
+  text-align: center;
+}

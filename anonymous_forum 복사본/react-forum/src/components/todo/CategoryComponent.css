@@ -1,0 +1,15 @@
+.categoryWarp {
+  background-color: #ededed;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.categoryContent {
+  width: 100px;
+  text-align: center;
+  padding: 0 10px;
+}

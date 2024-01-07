@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  min-width: 100vw;
+}
+
+.logoWapr {
+  display: flex;
+  width: 20%;
+  height: 5rem;
+  padding: 0 4rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.menuWarp {
+  width: 80%;
+  height: 5rem;
+  padding: 0rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu {
+  justify-content: flex-end;
+  list-style: none;
+  display: flex;
+}
+
+.menuContent > a {
+  position: relative;
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+}
+
+.menuContent a::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border-bottom: 3px solid #ededed;
+  transition: all 250ms ease-out;
+  left: 50%;
+  width: 0px;
+}
+.menuContent a:hover::after {
+  transition: all 250ms ease-out;
+  left: 0%;
+  width: 100%;
+}

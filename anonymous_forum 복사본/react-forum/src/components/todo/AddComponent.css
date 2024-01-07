@@ -1,0 +1,178 @@
+.AddWarp {
+  border-width: 2px;
+  margin-top: 2.5rem;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.AddWarp {
+  --tw-border-opacity: 1;
+  border-color: rgb(186 230 253 / var(--tw-border-opacity));
+}
+
+.AddTitleWarp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.AddTitleContent {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.AddTitleInput {
+  width: 100%;
+  height: 2rem;
+  padding: 1.5rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.AddUserWarp {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.AddTitleInput {
+  --tw-border-opacity: 1;
+  border-color: rgb(115 115 115 / var(--tw-border-opacity));
+}
+
+.AddTitleInput {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.AddWriterWarp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.AddWriterContent {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AddWriterInput {
+  width: 40%;
+  height: 2rem;
+  padding: 1.5rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.AddWriterInput {
+  --tw-border-opacity: 1;
+  border-color: rgb(115 115 115 / var(--tw-border-opacity));
+}
+
+.AddWriterInput {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.AddContentWarp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.AddContentContent {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.AddContentInput {
+  width: 100%;
+  padding: 1.5rem;
+  height: 7rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+.AddContentInput::placeholder {
+  font-size: 15px;
+}
+
+.AddButWarp {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.AddBtnContent {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.AddBtn {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 9rem;
+  background-color: #ededed;
+}
+
+.AddCartegoryWarp {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.AddCartegoryContent {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.AddSubContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.AddCartegoryContent select {
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.AddCartegory {
+  border: 2px solid black;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 9rem;
+  background-color: #ededed;
+  text-align: center;
+}
+
+.AddCartegory select:focus {
+  outline: 0;
+}
