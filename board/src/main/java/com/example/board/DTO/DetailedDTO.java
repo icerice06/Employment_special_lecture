@@ -16,5 +16,6 @@ public class DetailedDTO {
     private String title;
     private String writer;
     private String content;
+    private int category;
     private List<CommentEntity> comments;
 }

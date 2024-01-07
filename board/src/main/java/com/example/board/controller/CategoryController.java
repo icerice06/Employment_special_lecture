@@ -33,7 +33,7 @@ public class CategoryController {
     public ResponseEntity<ListResponse> main(){
         return boardService.findList();
     }
-
+    
 //    @GetMapping("/category")
 //    public ResponseEntity<CategoryResponse> category() {
 //        return boardService.findAll();
