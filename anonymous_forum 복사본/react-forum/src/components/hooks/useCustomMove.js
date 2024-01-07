@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   createSearchParams,
   useNavigate,
   useSearchParams,
-} from 'react-router-dom';
+} from "react-router-dom";
 
 const getNum = (param, defaultValue) => {
   if (!param) {
@@ -20,13 +20,13 @@ const useCustomMove = () => {
 
   const [queryParams] = useSearchParams();
 
-  const page = getNum(queryParams.get('page'), 1);
-  const size = getNum(queryParams.get('size'), 10);
+  const page = getNum(queryParams.get("page"), 1);
+  const size = getNum(queryParams.get("size"), 10);
 
   const queryDefault = createSearchParams({ page, size }).toString(); //새로 추가
 
   const moveToList = (pageParam) => {
-    let queryStr = '';
+    let queryStr = "";
 
     if (pageParam) {
       const pageNum = getNum(pageParam.page, page);
@@ -41,7 +41,7 @@ const useCustomMove = () => {
     }
 
     navigate({
-      pathname: `../list`,
+      pathname: `../`,
       search: queryStr,
     });
 

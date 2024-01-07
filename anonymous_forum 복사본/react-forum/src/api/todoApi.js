@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 // export const API_SERVER_HOST = `${process.env.REACT_APP_API_SERVER_HOST}`;
 
@@ -83,7 +83,7 @@ export const getComment = async () => {
 // 댓글 추가
 export const postComment = async (obj) => {
   const result = await fetch(`${commentPrefix}/`, {
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify({
       content: obj.content,
       writer: obj.writer,
@@ -92,7 +92,7 @@ export const postComment = async (obj) => {
       pwd: obj.pwd,
     }),
     headers: {
-      'content-type': 'application/json',
+      "content-type": "application/json",
     },
   });
 
@@ -103,7 +103,7 @@ export const postComment = async (obj) => {
 // 댓글 수정
 export const putComment = async (obj) => {
   const result = await fetch(`${commentPrefix}/${obj.tno}`, {
-    method: 'PUT',
+    method: "PUT",
     body: JSON.stringify({
       content: obj.content,
       wrtiter: obj.writer,
@@ -111,7 +111,7 @@ export const putComment = async (obj) => {
       pwd: obj.pwd,
     }),
     headers: {
-      'content-type': 'application/json',
+      "content-type": "application/json",
     },
   });
 
@@ -122,7 +122,7 @@ export const putComment = async (obj) => {
 // 댓글 삭제
 export const deleteComment = async (tno) => {
   const result = await fetch(`${commentPrefix}/${tno}`, {
-    method: 'DELETE',
+    method: "DELETE",
   });
 
   const res = result.json();
